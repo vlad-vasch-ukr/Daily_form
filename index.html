@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Form</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="conteiner">
+        <form action="/" class="ba-form">
+        <h1 class="ba-form__title">Create your free account</h1>
+        <p class="ba-form__account">Come and join our cool and amazing community, fill in your details
+            to get started. Already have an account? <a href="#" class="ba-form__links">Log in.</a></p>
+            <div class="ba-form-control ba-form-control--flex">
+                <input type="text" id="userFirstName" required  placeholder="First name" class="ba-form__input ba-form__input--width">
+                <input type="text" id="userLastName" required  placeholder="Last name" class="ba-form__input ba-form__input--width">
+            </div>
+            <div class="ba-form-control">
+                <input type="email" id="userEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Email address" class="ba-form__input">
+            </div>
+            <div class="ba-form-control">
+                <input type="password" id="userPassword" required placeholder="Password" class="ba-form__input">
+            </div>
+            <div class="ba-form-control">
+                <button class="ba-form__submit">Sign up for free</button>
+            </div>
+            <p class="ba-form__account">By clicking on “Sign up for free”, you agree to the <a href="#" class="ba-form__links">Terms of Service</a> and 
+                    the <a href="#" class="ba-form__links">Privacy Policy</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
